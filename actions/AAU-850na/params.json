@@ -1,0 +1,46 @@
+{
+    "category": "plugins",
+    "display": "Compare two Currencies",
+    "fields": {
+        "AAW": {
+            "caption": "First currency",
+            "default_val": "eur",
+            "editor": "DynamicValue",
+            "name": "first_currency",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAX": {
+            "caption": "Second currency",
+            "default_val": "jpy",
+            "editor": "DynamicValue",
+            "name": "second_currency",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAY": {
+            "caption": "Time",
+            "default_val": "latest",
+            "doc": "The date should either be latest or in YYYY-MM-DD format",
+            "editor": "DynamicValue",
+            "name": "time",
+            "rank": 2,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AAV": {
+            "caption": "Currency value",
+            "name": "currency_value",
+            "rank": 0,
+            "value": "number"
+        },
+        "AAZ": {
+            "caption": "Error",
+            "name": "error",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

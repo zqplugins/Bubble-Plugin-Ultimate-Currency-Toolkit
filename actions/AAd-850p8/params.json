@@ -1,0 +1,27 @@
+{
+    "category": "plugins",
+    "display": "Get All Currencies",
+    "return_value": {
+        "AAV": {
+            "caption": "Currency Code List",
+            "is_list": true,
+            "name": "currency_code",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAZ": {
+            "caption": "Error",
+            "name": "error",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAe": {
+            "caption": "Currency Name List",
+            "is_list": true,
+            "name": "currency_name",
+            "rank": 2,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}
