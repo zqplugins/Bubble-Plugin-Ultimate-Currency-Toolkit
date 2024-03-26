@@ -1,0 +1,58 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 32,
+        "width": 32
+    },
+    "display": "Get Specific Currency",
+    "fields": {
+        "AAn": {
+            "caption": "Currency",
+            "default_val": "eur",
+            "doc": "Currency Code",
+            "editor": "DynamicValue",
+            "name": "currency",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAo": {
+            "caption": "Time",
+            "default_val": "latest",
+            "doc": "The date should either be latest or in YYYY-MM-DD format. Example: 2022-10-31,2022-03-31",
+            "editor": "DynamicValue",
+            "name": "time",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAq": {
+            "caption": "Currency response type",
+            "editor": "custom_type",
+            "name": "currency_response_type",
+            "rank": 2
+        }
+    },
+    "icon": "ion-android-checkbox-blank",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "AAp": {
+            "caption": "Response",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": false,
+            "name": "response",
+            "value": "custom_data_AAq"
+        },
+        "AAv": {
+            "caption": "Error",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "error",
+            "value": "text"
+        }
+    }
+}
